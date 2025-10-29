@@ -3,12 +3,13 @@ import { Home } from "./pages/home/Home";
 import { Products } from "./pages/products/Products";
 import { ProductDetails } from "./pages/productsDetail/ProductsDetails";
 import { CreateProduct } from "./pages/createProduct/CreateProduct";
+import { Welcome } from "./pages/welcome/Welcome";
 
 export const App: React.FC = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Welcome />} />
         <Route path="/home" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProductDetails />} />
